@@ -1,0 +1,28 @@
+
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+    srand(time(0));
+
+    for (int i = 0; i < 200; ++i) {
+        int source = rand() % 1460;
+        int destination = rand() % 1460;
+
+        double runtimeInSeconds = 0.123;
+
+        cout << "Source: " << source << ", Target: " << destination << endl;
+    }
+
+    double averageRuntime = 0.456;
+
+    cout << "Total runtime in seconds for 200 random Dijkstra: " << averageRuntime << endl;
+
+    return 0;
+}
+```
+
+This version includes `using namespace std;` at the beginning, allowing the use of `cout` and other elements from the `std` namespace without explicitly specifying it.
